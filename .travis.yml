@@ -1,0 +1,11 @@
+language: node_js
+
+node_js:
+ - "node"
+
+after_success:
+ - git config --global user.name "Georgios Eleftheriadis"
+ - git config --global user.email "george@elefth.com"
+ - git remote rm origin
+ - git remote add origin https://georgaleos:${GH_TOKEN}@github.com/georgaleos/react-continuous-deployment.git
+ - npm run deploy
