@@ -29,5 +29,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://georgaleos.github.io/react-continuous-deployment/"
+  "homepage": "http://georgaleos.github.io/react-continuous-deployment/",
+  "proxy": "http://localhost:3001/"
 }
